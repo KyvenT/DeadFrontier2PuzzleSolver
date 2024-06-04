@@ -1,6 +1,16 @@
 * {
     scroll-behavior: smooth;
 }
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+header {
+    position: sticky;
+    background-color: #2a2a2a;
+    color: lightgrey;
+}
 body {
     background-color: #414141;
     font-family: "Arial Black", Gadget, sans-serif;
@@ -9,4 +19,60 @@ body {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+}
+#starting-number-lefts-and-rights {
+    padding: 3px 0;
+    width: 50px;
+    font-size: 35px;
+    text-align: center;
+    color: red;
+    font-weight: bold;
+}
+.arrow-slot-lefts-and-rights {
+    width: 50px;
+    height: 50px;
+    vertical-align: bottom;
+    text-align: center;
+    color: red;
+    background-color: grey;
+    font-size: 30px;
+    font-weight: bold;
+}
+#solution-lefts-and-rights {
+    font-size: 30px;
+    color: red;
+}
+#two-by-three-input, #two-by-three-solution {
+    display: grid;
+    width: 150px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+}
+.lights-on-input-button {
+    background-color: #222222;
+    border: 1px solid black;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    appearance: none;
+    -webkit-appearnce: none;
+    cursor: pointer;
+    outline: none;
+}
+.lights-on-input-button:checked {
+    background-color: red;
+}
+.lights-on-solution-button {
+    background-color: #222222;
+    border: 1px solid black;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    appearance: none;
+    -webkit-appearnce: none;
+    cursor: pointer;
+    outline: none;
+}
+.lights-on-solution-button:checked {
+    background-color: blue;
 }

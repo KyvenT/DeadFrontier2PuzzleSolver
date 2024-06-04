@@ -3,47 +3,117 @@
     <head>
         <meta charset="utf-8">
         <title>Dead Frontier 2 Puzzle Solver</title>
-        <script src="puzzleSolver.js"></script>
+        <script src="lightsOnSolver.js"></script>
+        <script src="leftsAndRightsSolver.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header>
-            
+            <h1>Dead Frontier 2 Puzzle Solver</h1>  
         </header>
         <main>
-            <h1>Dead Frontier 2 Puzzle Solver</h1>
-            <div id="leftsAndRightsPuzzle">
-                <input type="number" id="startingNumber">
+            <div id="lights-on-puzzle">
+                <h3>Lights On</h3>
+                <div id="grid-size-selection">
+                    <button id="select-2-by-3">2x3</button>
+                    <button id="select-2-by-4">2x4</button>
+                    <button id="select-3-by-3">3x3</button>
+                    <button id="select-3-by-4">3x4</button>
+                    <button id="select-5-by-3">5x3</button>
+                </div>
+                <div id="input-grid">
+                    <div id="two-by-three-input">
+                        <input type="checkbox" class="lights-on-input-button" id="first-two-by-three-input"></button>
+                        <input type="checkbox" class="lights-on-input-button" id="second-two-by-three-input"></button>
+                        <input type="checkbox" class="lights-on-input-button" id="third-two-by-three-input"></button>
+                        <input type="checkbox" class="lights-on-input-button" id="fourth-two-by-three-input"></button>
+                        <input type="checkbox" class="lights-on-input-button" id="fifth-two-by-three-input"></button>
+                        <input type="checkbox" class="lights-on-input-button" id="sixth-two-by-three-input"></button>
+                    </div>
+                    <div id="two-by-four-input">
+                        
+                    </div>
+                    <div id="three-by-three-input">
+                        
+                    </div>
+                    <div id="three-by-four-input">
+                        
+                    </div>
+                    <div id="five-by-three-input">
+                        
+                    </div>
+                </div>
+                <div id="solution-grid">
+                    <div id="two-by-three-solution">
+                        <input type="checkbox" class="lights-on-solution-button" id="first-two-by-three-solution"></button>
+                        <input type="checkbox" class="lights-on-solution-button" id="second-two-by-three-solution"></button>
+                        <input type="checkbox" class="lights-on-solution-button" id="third-two-by-three-solution"></button>
+                        <input type="checkbox" class="lights-on-solution-button" id="fourth-two-by-three-solution"></button>
+                        <input type="checkbox" class="lights-on-solution-button" id="fifth-two-by-three-solution"></button>
+                        <input type="checkbox" class="lights-on-solution-button" id="sixth-two-by-three-solution"></button>
+                    </div>
+                </div>
             </div>
-            <div id="numpadPuzzle">
+            <div id="lefts-and-rights-puzzle">
+                <h3>Lefts And Rights</h3>
+                <div id="lefts-and-rights-display">
+                    <input type="number" id="starting-number-lefts-and-rights" min="0" max="9">
+                    <button class="arrow-slot-lefts-and-rights" id="first-slot-lefts-and-rights"></button>
+                    <button class="arrow-slot-lefts-and-rights" id="second-slot-lefts-and-rights"></button>
+                    <button class="arrow-slot-lefts-and-rights" id="third-slot-lefts-and-rights"></button>
+                </div>
+
+                <div id="lefts-and-rights-arrow-input">
+                    <button id="left-twice"><<</button>
+                    <button id="left-once"><</button>
+                    <button id="right-once">></button>
+                    <button id="right-twice">>></button>
+                </div>
+                <button id="clear-lefts-and-rights">Clear</button>
+                <br>
+                <span id="solution-lefts-and-rights"></span>
+            </div>
+            <div id="numpad-puzzle">
+                <h3>Numpad</h3>
+                <div id="numpad-display">
+                    <input type="number" id="starting-number-numpad" min="0" max="9">
+                    <button class="arrow-slot-numpad" id="first-slot-numpad"></button>
+                    <button class="arrow-slot-numpad" id="second-slot-numpad"></button>
+                    <button class="arrow-slot-numpad" id="third-slot-numpad"></button>
+                </div>
+                <div id="lefts-and-rights-arrow-input">
+                    <button id="left-numpad">&#8592</button>
+                    <button id="up-numpad">&#8593</button>
+                    <button id="right-numpad">&#8594</button>
+                    <button id="down-numpad">&#8595</button>
+                </div>
+            </div>
+            <div id="line-count-puzzle">
 
             </div>
-            <div id="lineCountPuzzle">
+            <div id="circles-and-triangles">
 
             </div>
-            <div id="circlesAndTriangles">
+            <div id="roman-numeral-puzzle">
 
             </div>
-            <div id="romanNumeralPuzzle">
+            <div id="word-scramble-puzzle">
 
             </div>
-            <div id="wordScramblePuzzle">
+            <div id="missing-letters-puzzle">
 
             </div>
-            <div id="missingLettersPuzzle">
+            <div id="dots-and-dashes-number-puzzle">
 
             </div>
-            <div id="dotsAndDashesNumberPuzzle">
+            <div id="dots-and-dashes-letter-puzzle">
 
             </div>
-            <div id="dotsAndDashesLetterPuzzle">
+            <div id="binary-puzzle">
 
             </div>
-            <div id="binaryPuzzle">
-
-            </div>
-            <div id="numberToLetterPuzzle">
+            <div id="number-to-letter-puzzle">
 
             </div>
 
